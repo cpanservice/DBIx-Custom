@@ -3,6 +3,12 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
+    meta_merge => {
+        resources => {
+            repository => 'http://github.com/yuki-kimoto/DBIx-Custom',
+        },
+    },
+
     module_name         => 'DBIx::Custom',
     license             => 'perl',
     dist_author         => 'Yuki Kimoto <kimoto.yuki@gmail.com>',
